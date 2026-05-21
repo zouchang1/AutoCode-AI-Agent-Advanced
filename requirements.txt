@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 pytest>=7.0
 requests>=2.31.0
 python-dotenv>=1.0.0
+=======
+click>=8.0.0
+pytest>=7.0.0
+>>>>>>> 91142c2 (refactor: full rewrite v1.0.0 — modular agent architecture)

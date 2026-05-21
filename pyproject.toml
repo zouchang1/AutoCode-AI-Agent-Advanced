@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "auto-code-ai-agent-advanced"
+version = "1.0.0"
+description = "An intelligent multi-agent code analysis, PR generation, and automated testing orchestration system."
+authors = [
+    {name = "zouchang1"},
+]
+requires-python = ">=3.10"
+dependencies = [
+    "click>=8.0.0",
+    "pytest>=7.0.0",
+]
+
+[project.scripts]
+auto-agent = "auto_code_ai_agent_advanced.cli:cli"
+
+[tool.setuptools.packages.find]
+include = ["auto_code_ai_agent_advanced*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
